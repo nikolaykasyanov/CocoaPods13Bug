@@ -1,0 +1,11 @@
+osx_image: xcode8.3
+language: objective-c
+rvm: 2.3.0
+cache: bundler
+branches:
+  only:
+    - master
+script:
+- bundle exec pod install
+- xcodebuild -scheme CocoaPods13Bug -workspace CocoaPods13Bug.xcworkspace -sdk iphonesimulator -derivedDataPath build build
+- if [ `ls build/Build/Products/Debug-iphonesimulator/CocoaPods13Bug.app/Base.lproj/ | wc -l` = 1 ]; then exit 1; fi
