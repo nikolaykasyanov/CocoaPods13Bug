@@ -1,13 +1,8 @@
-GEM
-  remote: https://rubygems.org/
+GIT
+  remote: https://github.com/dnkoutso/CocoaPods.git
+  revision: 4636b69eb68f950a35d5a74a2eee016b009d8926
+  branch: delete_rsync
   specs:
-    CFPropertyList (2.3.5)
-    activesupport (4.2.9)
-      i18n (~> 0.7)
-      minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
-      tzinfo (~> 1.1)
-    claide (1.0.2)
     cocoapods (1.3.0)
       activesupport (>= 4.0.2, < 5)
       claide (>= 1.0.2, < 2.0)
@@ -23,10 +18,21 @@ GEM
       escape (~> 0.0.4)
       fourflusher (~> 2.0.1)
       gh_inspector (~> 1.0)
-      molinillo (~> 0.5.7)
+      molinillo (~> 0.6.1)
       nap (~> 1.0)
       ruby-macho (~> 1.1)
       xcodeproj (>= 1.5.1, < 2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    CFPropertyList (2.3.5)
+    activesupport (4.2.9)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    claide (1.0.2)
     cocoapods-core (1.3.0)
       activesupport (>= 4.0.2, < 6)
       fuzzy_match (~> 2.0.4)
@@ -48,7 +54,7 @@ GEM
     gh_inspector (1.0.3)
     i18n (0.8.6)
     minitest (5.10.3)
-    molinillo (0.5.7)
+    molinillo (0.6.1)
     nanaimo (0.2.3)
     nap (1.1.0)
     netrc (0.7.8)
@@ -66,7 +72,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cocoapods (= 1.3.0)
+  cocoapods!
 
 BUNDLED WITH
    1.14.6

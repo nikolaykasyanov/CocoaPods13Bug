@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
 
-gem 'cocoapods', '1.3.0'
+gem 'cocoapods', git: 'https://github.com/dnkoutso/CocoaPods.git', branch: 'delete_rsync'
